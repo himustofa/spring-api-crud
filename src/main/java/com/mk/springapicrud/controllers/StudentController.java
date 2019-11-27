@@ -88,4 +88,29 @@ public class StudentController {
         return studentService.deleteAll();
     }
 
+
+    /*@PostMapping("/student")
+    public Student saveStudent(@Valid @RequestBody Student student) {
+        return studentService.saveStudent(student);
+    }
+
+    @PostMapping(path = "/add")
+    @ResponseBody
+    public String addNewUser(@RequestParam String name, @RequestParam Integer age) {
+        // @ResponseBody means the returned String is the response, not a view name
+        // @RequestParam means it is a parameter from the GET or POST request
+        Student student = new Student();
+        student.setName(name);
+        student.setAge(age);
+        studentRepository.save(student);
+        return "Saved";
+    }
+
+    @GetMapping(path = "/all")
+    @ResponseBody
+    public Iterable<Student> getAllUsers() {
+        // This returns a JSON or XML with the users
+        return studentRepository.findAll();
+    }*/
+
 }
